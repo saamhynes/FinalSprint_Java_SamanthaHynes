@@ -10,8 +10,6 @@ public class UserCrud {
         boolean success = false;
         String hashedPassword = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
 
-        System.out.println("Length of hashed password: " + hashedPassword.length());
-
         String query = "INSERT INTO users (firstName, lastName, email, password, isDoctor, doctor_id) "
                 + "VALUES (?, ?, ?, ?, ?, ?)";
 

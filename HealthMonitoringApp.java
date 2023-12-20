@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class HealthMonitoringApp {
+
     public static void main(String[] args) {
         boolean isConnected = DatabaseConnection.isConnectedToHealthApp();
         if (isConnected) {
